@@ -16,6 +16,12 @@
 		324000D02B8073490017CA4F /* GPSViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324000CF2B8073490017CA4F /* GPSViewUITestsLaunchTests.swift */; };
 		324000DD2B80739E0017CA4F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324000DC2B80739E0017CA4F /* MapView.swift */; };
 		324000DF2B8073C60017CA4F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324000DE2B8073C60017CA4F /* CircleImage.swift */; };
+		324000F82B815C510017CA4F /* Ebe.json in Resources */ = {isa = PBXBuildFile; fileRef = 324000F72B815C510017CA4F /* Ebe.json */; };
+		3270096E2B83BE4A00A2C0F5 /* EbeModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270096D2B83BE4A00A2C0F5 /* EbeModal.swift */; };
+		327009702B83D39500A2C0F5 /* FetchEbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270096F2B83D39500A2C0F5 /* FetchEbe.swift */; };
+		327009BC2B86EC7800A2C0F5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009BB2B86EC7800A2C0F5 /* ListView.swift */; };
+		327009BE2B86EC9800A2C0F5 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009BD2B86EC9800A2C0F5 /* RowView.swift */; };
+		327009C12B89A59A00A2C0F5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009C02B89A59A00A2C0F5 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		324000CF2B8073490017CA4F /* GPSViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		324000DC2B80739E0017CA4F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		324000DE2B8073C60017CA4F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		324000F72B815C510017CA4F /* Ebe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Ebe.json; sourceTree = "<group>"; };
+		3270096D2B83BE4A00A2C0F5 /* EbeModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbeModal.swift; sourceTree = "<group>"; };
+		3270096F2B83D39500A2C0F5 /* FetchEbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEbe.swift; sourceTree = "<group>"; };
+		327009BB2B86EC7800A2C0F5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		327009BD2B86EC9800A2C0F5 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		327009C02B89A59A00A2C0F5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				324000B22B8073460017CA4F /* GPSViewApp.swift */,
-				324000B42B8073460017CA4F /* ContentView.swift */,
-				324000DC2B80739E0017CA4F /* MapView.swift */,
-				324000DE2B8073C60017CA4F /* CircleImage.swift */,
+				3270096C2B83BE1000A2C0F5 /* Modal */,
+				324000F42B8159400017CA4F /* Views */,
 				324000B62B8073480017CA4F /* Assets.xcassets */,
+				327009BF2B8706D600A2C0F5 /* Resources */,
 				324000B82B8073480017CA4F /* Preview Content */,
 			);
 			path = GPSView;
@@ -131,6 +143,36 @@
 				324000CF2B8073490017CA4F /* GPSViewUITestsLaunchTests.swift */,
 			);
 			path = GPSViewUITests;
+			sourceTree = "<group>";
+		};
+		324000F42B8159400017CA4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				324000B42B8073460017CA4F /* ContentView.swift */,
+				324000DE2B8073C60017CA4F /* CircleImage.swift */,
+				324000DC2B80739E0017CA4F /* MapView.swift */,
+				327009BB2B86EC7800A2C0F5 /* ListView.swift */,
+				327009C02B89A59A00A2C0F5 /* DetailView.swift */,
+				327009BD2B86EC9800A2C0F5 /* RowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3270096C2B83BE1000A2C0F5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				3270096D2B83BE4A00A2C0F5 /* EbeModal.swift */,
+				3270096F2B83D39500A2C0F5 /* FetchEbe.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		327009BF2B8706D600A2C0F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				324000F72B815C510017CA4F /* Ebe.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324000F82B815C510017CA4F /* Ebe.json in Resources */,
 				324000BA2B8073480017CA4F /* Preview Assets.xcassets in Resources */,
 				324000B72B8073480017CA4F /* Assets.xcassets in Resources */,
 			);
@@ -263,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3270096E2B83BE4A00A2C0F5 /* EbeModal.swift in Sources */,
 				324000B52B8073460017CA4F /* ContentView.swift in Sources */,
 				324000DF2B8073C60017CA4F /* CircleImage.swift in Sources */,
+				327009BE2B86EC9800A2C0F5 /* RowView.swift in Sources */,
+				327009BC2B86EC7800A2C0F5 /* ListView.swift in Sources */,
+				327009702B83D39500A2C0F5 /* FetchEbe.swift in Sources */,
+				327009C12B89A59A00A2C0F5 /* DetailView.swift in Sources */,
 				324000DD2B80739E0017CA4F /* MapView.swift in Sources */,
 				324000B32B8073460017CA4F /* GPSViewApp.swift in Sources */,
 			);

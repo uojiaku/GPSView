@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Nkwo Market",
+        "otherName": "Nkwo Market in year 2074",
+        "category": "Ahia",
+        "city": "Orlu",
+        "state": "Imo State, Nigeria",
+        "id": 1001,
+        "isFeatured": true,
+        "isFavorite": true,
+        "community": "Umundugba",
+        "geocoordinates": {
+            "longitude": 7.03,
+            "latitude": 5.64
+        },
+        "description": "Ahịa Nkwo dị ndị igbo mkpa. Ọ malitere site na ndị nna nna ha ma na-aga n'ihu.",
+        "NameOfImage": "streets",
+        "wallpaper": "streets"
+    },
+    {
+        "name": "Eke Market",
+        "otherName": "Eke Market in year 2074",
+        "category": "Ahia",
+        "city": "Onitsha",
+        "state": "Anambra State, Nigeria",
+        "id": 1002,
+        "isFeatured": false,
+        "isFavorite": false,
+        "community": "Umaroli",
+        "geocoordinates": {
+            "longitude": 6.802949,
+            "latitude": 6.04
+        },
+        "description": "A na-ewere ụbọchị ahịa Eke dị ka Isi Mbido Ahia (mmalite ụbọchị ahịa ma ọ bụ ahịa).",
+        "NameOfImage": "garden",
+        "wallpaper": "streets"
+
+    },
+    {
+        "name": "Orie Market",
+        "otherName": "Orie Market in year 2074",
+        "category": "Ahia",
+        "city": "Umuahia",
+        "state": "Abia State, Nigeria",
+        "id": 1003,
+        "isFeatured": false,
+        "isFavorite": true,
+        "community": "Omaegwu",
+        "geocoordinates": {
+            "longitude": 7.4,
+            "latitude": 5.52491000
+        },
+        "description": "Orie bụ ụbọchị tupu Afo, n'ihi ya, bụ ụbọchị a na-akwadebe ihe ubi maka ụbọchị ahịa.",
+        "NameOfImage": "island",
+        "wallpaper": "streets"
+    },
+    {
+        "name": "Afo Market",
+        "otherName": "Afo Market in year 2074",
+        "category": "Ahia",
+        "city": "Nsukka",
+        "state": "Enugu State, Nigeria",
+        "id": 1004,
+        "isFeatured": true,
+        "isFavorite": true,
+        "community": "Nru",
+        "geocoordinates": {
+            "longitude": 7.5,
+            "latitude": 6.87
+        },
+        "description": "afo ahia ụbọchị pụrụ iche ka ọ gbasara ụwa na ezinụlọ.",
+        "NameOfImage": "paradise",
+        "wallpaper": "streets"
+    }
+]
+

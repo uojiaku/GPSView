@@ -1,40 +1,42 @@
 //
-//  ContentView.swift
+//  ListDetailView.swift
 //  GPSView
 //
-//  Created by Uche Ojiaku on 2/16/24.
+//  Created by Uche Ojiaku on 2/23/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
+    var y: Ebe
+
     var body: some View {
         VStack {
-            MapView()
-                .frame(height: 325)
+            MapView(there: y.Location)
+                .frame(height: 300)
             
-            CircleImage()
+            CircleImage(a: y.image)
                 .offset(y: -160)
-                .padding(.bottom, -130)
+                .padding(.bottom, -120)
             
             VStack(alignment: .leading) {
-                Text("Nkwo Market")
+                Text(y.otherName)
                     .font(.title)
                 HStack {
-                    Text("Umundugba")
+                    Text(y.community)
                     Spacer()
-                    Text("Imo State, Nigeria")
+                    Text(y.state)
                 }
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
                 Divider()
                 
-                Text("Learn More")
+//                Text("Learn More")
                     .font(.title2)
-                Text("Ahịa Nkwo dị ndị igbo mkpa. \nỌ malitere site na ndị nna nna ha ma na-aga n'ihu.")
+                Text(y.description)
 
             }
-            .padding()
+            .padding([.leading, .trailing], 10)
             Spacer()
             
         }
@@ -42,6 +44,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    DetailView(y: info[2])
 }
+
 
