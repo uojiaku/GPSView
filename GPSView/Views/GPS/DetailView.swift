@@ -11,7 +11,7 @@ struct DetailView: View {
     var y: Ebe
 
     var body: some View {
-        VStack {
+        ScrollView {
             MapView(there: y.Location)
                 .frame(height: 300)
             

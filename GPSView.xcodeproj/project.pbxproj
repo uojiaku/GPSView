@@ -22,6 +22,7 @@
 		327009BC2B86EC7800A2C0F5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009BB2B86EC7800A2C0F5 /* ListView.swift */; };
 		327009BE2B86EC9800A2C0F5 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009BD2B86EC9800A2C0F5 /* RowView.swift */; };
 		327009C12B89A59A00A2C0F5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009C02B89A59A00A2C0F5 /* DetailView.swift */; };
+		327009CD2B9C1A6F00A2C0F5 /* FavButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327009CC2B9C1A6E00A2C0F5 /* FavButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		327009BB2B86EC7800A2C0F5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		327009BD2B86EC9800A2C0F5 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		327009C02B89A59A00A2C0F5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		327009CC2B9C1A6E00A2C0F5 /* FavButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				324000B22B8073460017CA4F /* GPSViewApp.swift */,
-				3270096C2B83BE1000A2C0F5 /* Modal */,
 				324000F42B8159400017CA4F /* Views */,
 				324000B62B8073480017CA4F /* Assets.xcassets */,
+				3270096C2B83BE1000A2C0F5 /* Modal */,
 				327009BF2B8706D600A2C0F5 /* Resources */,
 				324000B82B8073480017CA4F /* Preview Content */,
 			);
@@ -149,11 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				324000B42B8073460017CA4F /* ContentView.swift */,
-				324000DE2B8073C60017CA4F /* CircleImage.swift */,
-				324000DC2B80739E0017CA4F /* MapView.swift */,
-				327009BB2B86EC7800A2C0F5 /* ListView.swift */,
-				327009C02B89A59A00A2C0F5 /* DetailView.swift */,
-				327009BD2B86EC9800A2C0F5 /* RowView.swift */,
+				327009CA2B9C18C100A2C0F5 /* GPS */,
+				327009CB2B9C190F00A2C0F5 /* Helper */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +172,26 @@
 				324000F72B815C510017CA4F /* Ebe.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		327009CA2B9C18C100A2C0F5 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				327009BB2B86EC7800A2C0F5 /* ListView.swift */,
+				327009BD2B86EC9800A2C0F5 /* RowView.swift */,
+				327009C02B89A59A00A2C0F5 /* DetailView.swift */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		327009CB2B9C190F00A2C0F5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				324000DE2B8073C60017CA4F /* CircleImage.swift */,
+				324000DC2B80739E0017CA4F /* MapView.swift */,
+				327009CC2B9C1A6E00A2C0F5 /* FavButton.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 				3270096E2B83BE4A00A2C0F5 /* EbeModal.swift in Sources */,
 				324000B52B8073460017CA4F /* ContentView.swift in Sources */,
 				324000DF2B8073C60017CA4F /* CircleImage.swift in Sources */,
+				327009CD2B9C1A6F00A2C0F5 /* FavButton.swift in Sources */,
 				327009BE2B86EC9800A2C0F5 /* RowView.swift in Sources */,
 				327009BC2B86EC7800A2C0F5 /* ListView.swift in Sources */,
 				327009702B83D39500A2C0F5 /* FetchEbe.swift in Sources */,
@@ -533,6 +553,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHVDK97RWY;
@@ -553,6 +574,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHVDK97RWY;

@@ -18,13 +18,18 @@ struct RowView: View {
                 .frame(width: 50, height: 50)
             Text(z.name)
                 .font(.system(size: 30, weight: .light, design: .default))
-
             
             Spacer()
+            
+            if z.isFav {
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+            }
+            
         }
     }
 }
 
 #Preview {
-    RowView(z: info[1])
+    RowView(z: info[0])
 }

@@ -17,6 +17,7 @@ struct Ebe : Hashable, Codable, Identifiable {
     var state: String
     var community: String
     var description: String
+    var isFav: Bool
     
     private var geocoordinates: Geo
     struct Geo : Hashable, Codable {

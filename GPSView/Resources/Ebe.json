@@ -7,7 +7,7 @@
         "state": "Imo State, Nigeria",
         "id": 1001,
         "isFeatured": true,
-        "isFavorite": true,
+        "isFav": true,
         "community": "Umundugba",
         "geocoordinates": {
             "longitude": 7.03,
@@ -25,7 +25,7 @@
         "state": "Anambra State, Nigeria",
         "id": 1002,
         "isFeatured": false,
-        "isFavorite": false,
+        "isFav": false,
         "community": "Umaroli",
         "geocoordinates": {
             "longitude": 6.802949,
@@ -44,7 +44,7 @@
         "state": "Abia State, Nigeria",
         "id": 1003,
         "isFeatured": false,
-        "isFavorite": true,
+        "isFav": true,
         "community": "Omaegwu",
         "geocoordinates": {
             "longitude": 7.4,
@@ -62,7 +62,7 @@
         "state": "Enugu State, Nigeria",
         "id": 1004,
         "isFeatured": true,
-        "isFavorite": true,
+        "isFav": true,
         "community": "Nru",
         "geocoordinates": {
             "longitude": 7.5,
