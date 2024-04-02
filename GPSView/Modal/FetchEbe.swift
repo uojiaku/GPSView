@@ -7,7 +7,11 @@
 
 import Foundation
 
-var info: [Ebe] = processData("Ebe.json")
+@Observable
+class EbeData {
+    var info: [Ebe] = processData("Ebe.json")
+}
+
 
 func processData<T: Decodable>(_ filename: String) -> T {
     

@@ -30,6 +30,12 @@ struct RowView: View {
     }
 }
 
-#Preview {
-    RowView(z: info[0])
+#Preview { 
+    // RowView(z: EbeData().info[0])
+
+    let k = EbeData().info
+    return Group {
+        RowView(z: k[0])
+        RowView(z: k[1])
+    }
 }

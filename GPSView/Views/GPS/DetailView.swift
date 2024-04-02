@@ -44,7 +44,9 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(y: info[2])
+//    DetailView(y: info[2])
+    DetailView(y: EbeData().info[2])
+
 }
 
 

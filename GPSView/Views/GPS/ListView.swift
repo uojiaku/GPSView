@@ -9,10 +9,12 @@ import SwiftUI
 
 
 struct ListView: View {
+    @Environment(EbeData.self) var ebeData
     @State private var showFavOnly = false
     
     var filteredEbe: [Ebe] {
-        info.filter {
+        ebeData.info.filter {
+//        info.filter {
             i in (!showFavOnly || i.isFav)
             //  show entirelist or favorites
         }
@@ -23,9 +25,9 @@ struct ListView: View {
         NavigationSplitView {
 //            List(info){ i in
             /*List*/
-            
             List {
-                Toggle(isOn: $showFavOnly, label: { // add state var to toggle
+                Toggle(isOn: $showFavOnly, label: {    // add state var to toggle
+
                     Text("Show Favs")
                 })
                 ForEach(filteredEbe){ i in
@@ -50,4 +52,5 @@ struct ListView: View {
 
 #Preview {
     ListView()
+        .environment(EbeData())
 }
